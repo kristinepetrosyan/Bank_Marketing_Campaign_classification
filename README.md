@@ -4,8 +4,9 @@
 * [Problem statement](#problem-statement)
 * [Data](#data)
 * [Technologies](#technologies)
-* [Final Models' Results](#final-models'-results)
-* [Security Recommendations](#security-recommendations)
+* [Models' Results](#models'-results)
+* [Insights](#insights)
+* [Recommendations](#recommendations)
 * [Further Studies](#further-studies)
 ## Problem statement
 
@@ -57,8 +58,18 @@ The bank marketing dataset consists of 21 columns and 41187 rows. The features o
 
 Output variable (desired target): 21 - y - has the client subscribed a term deposit? (binary: "yes","no")
 
+## Technologies
+This project was created using the following languages and libraries. An environment with the correct versions of the following libraries will allow re-production and improvement on this project. 
 
-## Model Comparison
+* Python version: 3.6.9
+* Matplotlib version: 3.0.3
+* Seaborn version: 0.9.0
+* Pandas version: 0.24.2
+* Numpy version: 1.16.2
+* Sklearn version: 0.20.3
+* XGBoost version: 0.90
+
+## Models' Results
 In the project:
 
 - Logistic Regression,
@@ -85,15 +96,15 @@ The best performing machine learning model is XGBoost used with:
 
   parameters. 
 
-<img src="https://github.com/esraguzel/dsc-mod-3-project-v2-1-onl01-dtsc-ft-012120/blob/master/images/Screenshot%202020-04-21%20at%2022.29.34.png?raw=true" width="100%">
+<img src="https://github.com/kristinepetrosyan/Bank_Marketing_Campaign_classification/blob/master/images/Screen%20Shot%202020-07-11%20at%203.11.43%20PM.png">
 
 
  While Naive Bayes classifier has the lowest training time, XGBoost has the highest training time. Hence, it is the computationally most expensive one. In terms of training, test, f1 and recall score, XGBoost has the highest score, Naive Bayes has the lowest. Both Random Forest and Logistic Regression's score are very close to XGBoost's scores, but their training time is much shorter compared to XGBoost.
  
-<img src="https://github.com/esraguzel/dsc-mod-3-project-v2-1-onl01-dtsc-ft-012120/blob/master/images/Screenshot%202020-04-21%20at%2023.38.38.png?raw=true" width="100%">
+<img src="https://github.com/kristinepetrosyan/Bank_Marketing_Campaign_classification/blob/master/images/Screen%20Shot%202020-07-15%20at%203.36.05%20PM.png">
 
 
-<img src="https://github.com/esraguzel/dsc-mod-3-project-v2-1-onl01-dtsc-ft-012120/blob/master/images/Screenshot%202020-04-21%20at%2022.48.25.png?raw=true" width="100%">
+<img src="https://github.com/kristinepetrosyan/Bank_Marketing_Campaign_classification/blob/master/images/Screen%20Shot%202020-07-15%20at%203.36.27%20PM.png">
 
 ## Insights:
 
@@ -125,7 +136,7 @@ The best performing machine learning model is XGBoost used with:
 * Over focused telemarketing campaigns may affect customers negatively. Number of campaigns shouldn't be exceeding 10.
 * Longer duration indicates positive response from customers in terms of term deposits. 
 
-## Future Work:
+## Further studies:
 * Further analysis on consumer behaviour could be conducted to gain more insights. 
 * More concrete insights can be reached with broader datasets.
 * Regression models can be applied to predict duration as future work.
